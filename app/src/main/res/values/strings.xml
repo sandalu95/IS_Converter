@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">DigiFlex</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="btn_basic_txt">BASIC</string>
+    <string name="btn_living_txt">LIVING</string>
+    <string name="btn_science_txt">SCIENCE</string>
+    <string name="btn_misc_txt">MISC.</string>
+    <string name="tab_length_txt">LENGTH</string>
+    <string name="tab_area_txt">AREA</string>
+    <string name="tab_weight_txt">WEIGHT</string>
+    <string name="tab_volume_txt">VOLUME</string>
+    <string name="enter_txt">Enter Value :</string>
+    <string name="btn_convert_txt">CONVERT</string>
+    <string name="valueText_default">0</string>
+    <string name="to_txt">-></string>
+    <string-array name="length_array">
+        <item>Meter</item>
+        <item>Kilometer</item>
+        <item>Centimeter</item>
+        <item>Millimeter</item>
+        <item>Mile</item>
+        <item>Yard</item>
+        <item>Foot</item>
+        <item>Inch</item>
+    </string-array>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="35dp"
+        android:background="#E0EAEC"
+        android:padding="8dp"
+        android:id="@+id/spinnerWrapper">
+
+        <Spinner
+            android:id="@+id/spinnerFrom"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="35dp"
+        android:background="#E0EAEC"
+        android:padding="8dp"
+        android:id="@+id/spinnerToWrapper">
+
+        <Spinner
+            android:id="@+id/spinnerTo"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/fromText"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_below="@+id/enterValueTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="67dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/valueText_default" />
+
+    <TextView
+        android:id="@+id/enterValueTxt"
+        android:layout_width="105dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/spinnerWrapper"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="57dp"
+        android:text="@string/enter_txt"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/convert_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="142dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/fromText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="136dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onClickButton"
+        android:text="@string/btn_convert_txt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_toEndOf="@+id/spinnerWrapper"
+        android:text="@string/to_txt"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/toText"
+        android:layout_width="197dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/convert_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="108dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp" />
+
+</RelativeLayout>
